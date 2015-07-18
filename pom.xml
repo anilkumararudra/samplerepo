@@ -86,25 +86,25 @@
 				<version>6.1.10</version>
 				<!--
 				<configuration>
-					<scanIntervalSeconds>5</scanIntervalSeconds>
+				<scanIntervalSeconds>5</scanIntervalSeconds>
 					<stopKey>foo</stopKey>
 					<stopPort>9999</stopPort>
 				</configuration>
 				<executions>
 					<execution>
 						<id>start-jetty</id>
-						<phase>pre-integration-test</phase>
+					<phase>pre-integration-test</phase>
 						<goals>
 							<goal>run</goal>
 						</goals>
 						<configuration>
-							<scanIntervalSeconds>0</scanIntervalSeconds>
+				<scanIntervalSeconds>0</scanIntervalSeconds>
 							<daemon>true</daemon>
 						</configuration>
 					</execution>
 					<execution>
 						<id>stop-jetty</id>
-						<phase>post-integration-test</phase>
+					<phase>post-integration-test</phase>
 						<goals>
 							<goal>stop</goal>
 						</goals>
@@ -140,10 +140,10 @@
 							<goal>single</goal>
 						</goals>
 						<configuration>
-							<finalName>zk-archetype-webapp${packname}</finalName>
-							<appendAssemblyId>false</appendAssemblyId>
+			<finalName>zk-archetype-webapp${packname}</finalName>
+				<appendAssemblyId>false</appendAssemblyId>
 							<descriptors>
-								<descriptor>src/main/assembly/webapp.xml</descriptor>
+			<descriptor>src/main/assembly/webapp.xml</descriptor>
 							</descriptors>
 						</configuration>
 					</execution>
